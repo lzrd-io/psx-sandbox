@@ -417,6 +417,8 @@ class SecurityManager
         'pos',
         'sizeof',
         'key_exists',
+        'hash_hmac',
+        'str_contains',
     ];
 
     private array $allowedClasses = [
@@ -481,6 +483,12 @@ class SecurityManager
         'SimpleXMLIterator',
         'NumberFormatter',
         'Swift_Message',
+        'HttpProcessor',
+        'RequestFactory',
+        'StreamFactory',
+        'Request',
+        'Client',
+        'RequestException',
     ];
 
     public function setAllowedFunctions(array $allowedFunctions)
